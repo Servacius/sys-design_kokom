@@ -15,7 +15,28 @@ A thoughful and well-designed system is more efficient than other system and can
 - **Understand the problem**: Have an understanding about the problem you are trying to solve by gather the information, identify users/client needs and the constraint or limitation of the system that we want to build
 - **Identify the scope of the system**: Define the scope of the system, either what the system can do and cannot do.
 - **Research and analyze existing systems**: We can learn from similar system that worked well in the past or in the current system, and use it to make a decision for designing a system.
-- **Create high-level design**: We start with describing the component of the system and how the components will react each other. This inclue a rough diagram of the system architecture or a flowchart oulining the fow.
+- **Create high-level design**: We start with describing the component of the system and how the components will react each other. This inclue a rough diagram of the system architecture or a flowchart oulining the fow.(Note: high-level Design describe how everything works as a single organism. And low-level design describe each one organ or part in detail.)
 - **Refine the design**: As we work on the details of the system we refine it couple of times until we have complete and detailed design that meets all the requirements
 - **Remember to document the design** : Create detailed documentation of the design for future reference so that its can be maintain
 - **Continuously monitor and improve the system**
+  
+
+### Common Principles of System Design
+Here is some common system design concepts that every developer should know and some of it will be topics that we used later as a trade-off when we decide the architecture:
+1. Scalability
+2. Reliability and Fault Tolerance 
+3. Availability
+4. Maintainability
+5. Performance Optimization
+6. Modularity
+7. Security and Privacy
+8. Data Privacy and Ethics
+9. Encaptulation and Abstraction
+10. Document Everything
+
+#### 1. Scalability
+Scalability refers to the systems ability to handle the increased workload and user demand without a significant decrease in performance. There are two types of scaling.
+- Vertical scaling: It requires to upgrade the current servers or machines
+- Horizontal scaling: It requires adding a few more servers or nodes.
+For example: E-commernce stores handle millions or billions of monthly active users. In the festival the trafic will increased, and need to be vertical and horizontal scaling to handle the increased number of users while maintaining the performance of their website or application.
+#### 2. Reliability and Fault Tolerance
