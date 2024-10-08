@@ -40,3 +40,9 @@ Scalability refers to the systems ability to handle the increased workload and u
 - Horizontal scaling: It requires adding a few more servers or nodes.
 For example: E-commernce stores handle millions or billions of monthly active users. In the festival the trafic will increased, and need to be vertical and horizontal scaling to handle the increased number of users while maintaining the performance of their website or application.
 #### 2. Reliability and Fault Tolerance
+Realibility measures if the system works as expected without crashes
+Fault tolerance onvolves designing a system to continue functioning even in the precense of hardware failures, software bugs or other unexpected errors.
+#### 3. Availability
+Availability refers to the readiness and accessibility of a system or service to users at any given time or how much time the system is operational and available to users.
+Example: Platforms like Netflix or Payment service ensure that their system is highly available and their user can access the content every time. Application like that rely on load balancing and db replicas to handles failure.
+#### 4. Maintainability 
