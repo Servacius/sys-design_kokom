@@ -45,4 +45,6 @@ Fault tolerance onvolves designing a system to continue functioning even in the 
 #### 3. Availability
 Availability refers to the readiness and accessibility of a system or service to users at any given time or how much time the system is operational and available to users.
 Example: Platforms like Netflix or Payment service ensure that their system is highly available and their user can access the content every time. Application like that rely on load balancing and db replicas to handles failure.
-#### 4. Maintainability 
+#### 4. Maintainability
+Maintainability focuses on making systems easy to maintain, troubleshoot, and update throughout the system development. High maintainability can be achieved by well-documented code, modular architecture, and version control practices.
+And make the developer take less time and effort to understand the system.
