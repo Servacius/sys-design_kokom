@@ -28,23 +28,60 @@ Here is some common system design concepts that every developer should know and 
 3. Availability
 4. Maintainability
 5. Performance Optimization
-6. Modularity
-7. Security and Privacy
-8. Data Privacy and Ethics
-9. Encaptulation and Abstraction
-10. Document Everything
+6. Separation of Concerns
+7. Security
+8. Consistency and Data Integrity
+9. Resilience
+10. Monitoring and Observability
+11. Cost Efficiency
 
 #### 1. Scalability
 Scalability refers to the systems ability to handle the increased workload and user demand without a significant decrease in performance. There are two types of scaling.
 - Vertical scaling: It requires to upgrade the current servers or machines
 - Horizontal scaling: It requires adding a few more servers or nodes.
-For example: E-commernce stores handle millions or billions of monthly active users. In the festival the trafic will increased, and need to be vertical and horizontal scaling to handle the increased number of users while maintaining the performance of their website or application.
+
+**Why it matters** : Systems are often built with future growth in mind. Over time, user demand and data loads increase, and the system should handle this growth without performance degradation.
 #### 2. Reliability and Fault Tolerance
 Realibility measures if the system works as expected without crashes
 Fault tolerance onvolves designing a system to continue functioning even in the precense of hardware failures, software bugs or other unexpected errors.
+
+**Why it matters** : Systems inevitablt encounter issues, from network failures to hardware malfunctions. Your system shold "fail gracefully" instead of going down completely.
 #### 3. Availability
 Availability refers to the readiness and accessibility of a system or service to users at any given time or how much time the system is operational and available to users.
-Example: Platforms like Netflix or Payment service ensure that their system is highly available and their user can access the content every time. Application like that rely on load balancing and db replicas to handles failure.
+
+**Why it matters** : Users expect systems to be aavilable almost all the time, even in the face of failure, for example : What happens when a server crashes? How does the system recover? We can build redundancy through multiple servers, data replication and failure mechanisms, to ensure that if a component fails, another one takes over seamlessly.
 #### 4. Maintainability
 Maintainability focuses on making systems easy to maintain, troubleshoot, and update throughout the system development. High maintainability can be achieved by well-documented code, modular architecture, and version control practices.
 And make the developer take less time and effort to understand the system.
+
+**Why it matters** : Over time, systems evolve-features are added, bugs are fixed and performance improvements are made. A maintainable system is easier to update without introducing new issues. We can handle this by writing a clean, modular code adhering to established best ppractices and patterns (like SOLID principles, etc), use version control, continuous integration and continuous deployment to maintain and improve the system over time.
+#### 5. Performance Optimization
+Performance optimization involves designing a system with high response time annd optimal throughput while using the available resources, queries optimizeed, etc. Consider the trade-offs: sometimes optimizing performance might comppromise maintainability or consistency, so it's about balancung different priorities.
+
+**Why it matters** : Users expect system to be fast and responsive, with minimal delays.
+#### 6. Separation of Concerns
+Devide our system into different layers, tipically presentation UI, business logic and data access layers, and many more. This separation makes the system more flexible ; changes to one concern don't ripple through unrelated areas.
+
+**Why it matters** : Mixing responsibilites in a system leads to tangled logic that's hard to manage.
+#### 7. Security
+Just like the title its about the user ans system security, it involves protecting the system from attacks, unauthorized access and data breaches. how can unauthorized users be prevented from accessing the system? Implement strong authentication and authorization (e.g., OAUTH2, JWT tokens). We protect the transmitted data by encrypt it using HTPPS.
+
+**Why it matters** : Protecting user data and preventing unauthorized access are fundamental, especially for sensitive data like personal information or financial records.
+#### 8. Consistency and Data integrity
+Consistency refers to the same data being populated & retrieved across all the nodes at any given point in time. In a distributed system, we are have to choose between strong consistency (data is always syncronized or real time data is sync accross all nodes) and eventual consistency (data will eventually syncronized). Use transaction management and proper database design to ensure data integrity.
+
+**Why it matters** : Inconsistent or corrupted data can result in poor user experiences, failed transaction or system crashes. Evaluate this use case : Is consistency more critical (e.g banking transaction) or is it acceptable for some users lightly delayed data (e.g., e-commernce product availability)
+#### 9. Resilience
+Resilience is about how can the system handle overloads or temporary service failures. We can implement graceful degradation, where the system still works but with reduced functionality
+
+**Why it matters** : Systems must continue to operate under stress or failures and recover quickly when thigns go wrong.
+#### 10. Monitoring and Observability
+Make sure to have a clear system for monitoring , ensure that metrics that matter the most being tracked. Use logs, tracing and metrics to get a full picture of system behavior and identify potential bottlenecks or failure points.
+
+**Why it matters** : Without visibility into how the system is performing, you can't diagnose problems or optimize its performance.
+#### 11. Cost Efficiency
+When we talk about designing system of course we won't far from cost money. So we must consider autoscaling to meet demand dynamically instead of provisioning excess capacity that sits idle. Looks for ways to reduce costs without compromising performance.
+
+**Why it matters** : Resources like servers, storage, and bandwith cost money, so systems need to balance performance, reliability, and cost.
+
+> Each of these principles balances trade-offs and constraints to meet the system's goals. The art of system is figuring out which principles are most important based on the system's context and business requirements.
