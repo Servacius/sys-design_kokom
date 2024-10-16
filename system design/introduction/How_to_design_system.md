@@ -12,3 +12,11 @@ Choosing the right system design or architecture requires careful consideration 
   - **Security:** What level of data protection and user authentication is required? Are there regulatory compliance needs?
   - **Data Consistency:** Does the system need to ensure immediate consistency (ACID properties), or is eventual consistency acceptable?
   - **Maintainability:** How frequently will the system need updates? Is it critical to have continous deployment or rapid feature development?
+- **Constraints:** Identify any constraints or limitations that the system may face. These could be technical, budgetary, or organizational.
+  - **Key Considerations:**
+    - What is the budget for the system? Are there cost restrictions for resources (servers, databases)?
+    - Are there hardware or software limitations (e.g., existing infrastructure)?
+    - Does the team have expertise in certain technologies or architectures(e.g., cloud native, microservices)?
+    - Are there time constraints for deployments?
+
+**Though Process:** The clearer your understanding of the requirements , the easier it becomes to pick an architecture that aligns with those needs. Ensure that you capture both immadiate needs and potential future scaling considerations. Constraints help narrow down the architectural choices. For example, budget constraints might make a monolithic architecture more attractive than a microservice-based or another architecture.
