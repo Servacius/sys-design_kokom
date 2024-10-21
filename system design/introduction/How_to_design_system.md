@@ -48,4 +48,5 @@ Consider how the system will scale over time and how performance will be optimiz
 
 **Thought Process:** Systems that require high availability (like financial or healthcare systems) may require redundancy, replication, and automatic failover mechanisms, pushing you towards more fault-tolerance architectures like microservices. If downtime is acceptable, simpler architectures can be chosen.
 =======
->>>>>>> 99280dd23ec175b912c191cdcab1e389a5b046d0
+
+#### 5. 
