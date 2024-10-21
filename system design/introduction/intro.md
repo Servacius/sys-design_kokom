@@ -14,7 +14,7 @@ A thoughful and well-designed system is more efficient than other system and can
 ### *How to: System Design?*
 - **Understand the problem**: Have an understanding about the problem you are trying to solve by gather the information, identify users/client needs and the constraint or limitation of the system that we want to build
 - **Identify the scope of the system**: Define the scope of the system, either what the system can do and cannot do.
-- **Research and analyze existing systems**: We can learn from similar system that worked well in the past or in the current system, and use it to make a decision for designing a system.
+- **Assess the Workload Characteristics**: Analyze the expected workload to determine the best architecture.
 - **Create high-level design**: We start with describing the component of the system and how the components will react each other. This inclue a rough diagram of the system architecture or a flowchart oulining the fow.(Note: high-level Design describe how everything works as a single organism. And low-level design describe each one organ or part in detail.)
 - **Refine the design**: As we work on the details of the system we refine it couple of times until we have complete and detailed design that meets all the requirements
 - **Remember to document the design** : Create detailed documentation of the design for future reference so that its can be maintain
