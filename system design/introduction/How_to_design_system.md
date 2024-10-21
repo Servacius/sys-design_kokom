@@ -1,5 +1,5 @@
 ## How to design system
->*'Picking the "**right**" architecture = Picking the right battles + Managing trade-offs' by [Primal Skill](https://primalskill.blog/wins-and-trade-offs-in-software)*
+>*'Picking the "**right**" architecture = Picking the right battles + Managing trade-offs' by [Primal Skill](https://primalskill.blog/wins-and-trade-offs-in-software#:~:text=Picking%20the%20%22right%22%20software%20architecture%2C%20for%20example%2C%20is%20like%20picking%20the%20right%20battles%20and%20then%20managing%20the%20trade%2Doffs)*
 
 Choosing the right system design or architecture requires careful consideration of various factors. The process involves understanding both the technical and business requirements, followed by balancing trade-offs in scalability, performance, security, and maintainability. Here's a structured approach to help guide your thought process when deciding the right system design:
 
