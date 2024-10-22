@@ -47,6 +47,11 @@ Consider how the system will scale over time and how performance will be optimiz
   - What are the key failure points, and how will you  mitigate them (like load balancers, failover mechanisms)?
 
 **Thought Process:** Systems that require high availability (like financial or healthcare systems) may require redundancy, replication, and automatic failover mechanisms, pushing you towards more fault-tolerance architectures like microservices. If downtime is acceptable, simpler architectures can be chosen.
-=======
 
-#### 5. 
+#### 5. Decide on the Right Database and Data Management Strategy
+Choose a data storage strategy that aligns with the system's performance, scalability, and consistency needs.
+- **Key Consideration:** Will the system use a relational (SQL) or NoSQL database? This depends on whether data consistency or flexibility is more important.
+- Will you need the data be partitioned? Will you need sharding to distribute data across multiple databases?
+- Do you need strong consistency or can the system work with eventual consistency? And many more, i will explain some of theorem that will help us to choose database with CAP Theorem, and PACELC Theorem in another chapter.
+
+**Though Process:** Large, distributed systems might benefit from NoSQL solutions with eventual consistency for performance, while highly transactional system (like banking) will favor SQL databases with ACID quarantees (will add another chapter to explain ACID). If the system deals with a lot of unstructured or semi-structured data, NoSQL databases may be more appropriate.
