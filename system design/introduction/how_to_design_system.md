@@ -55,3 +55,7 @@ Choose a data storage strategy that aligns with the system's performance, scalab
 - Do you need strong consistency or can the system work with eventual consistency? And many more, i will explain some of theorem that will help us to choose database with CAP Theorem, and PACELC Theorem in another chapter.
 
 **Though Process:** Large, distributed systems might benefit from NoSQL solutions with eventual consistency for performance, while highly transactional system (like banking) will favor SQL databases with ACID quarantees (will add another chapter to explain ACID). If the system deals with a lot of unstructured or semi-structured data, NoSQL databases may be more appropriate.
+
+#### 6. Choose the Right Architecture Pattern
+Based on the previous steps , we must select carefully the architecture pattern that best meets the system's requirements.
+- **Key Considerations:**
