@@ -59,3 +59,19 @@ Choose a data storage strategy that aligns with the system's performance, scalab
 #### 6. Choose the Right Architecture Pattern
 Based on the previous steps , we must select carefully the architecture pattern that best meets the system's requirements.
 - **Key Considerations:**
+  - **Monolithic:** Simple to build and deploy but harder to scale. Good for small applications or MVPs.
+  - **Microservices:** More complex but allows for independent scaling, fault tolerance and flexibility. Suitable for large, complex systems.
+  - **Event-Driven:** Useful for real-time data processing where components need to react to events.
+  - **Layered Architecture:** Divides the system into layers (UI, business logic, data access), making it easier to manage but less scalable than microservices.
+
+
+**Thought Process:** Match the architecture to complexity, scaling needs, and expertise of your team. For example, if you expect to iterate quickly and the project is small, a monolithic approach might be better, with an eye on refactoring to microservices later.
+
+#### 7. Address Security Concerns Early On
+Ensure the architecture incorporates the necessary security mechanism to protect the system.
+- **Key Considerations:**
+  - What kind of authentication and authorization is required? (like OAuth2, JWT, role-based access control)
+  - How will sensitive data be protected (like encryption in transit and at rest)?
+  - How will the system be protectedagainst threats like DDoS attacks, SQL injection or XSS?
+
+**Thought Process:** How will users authenticate and what permissions will they have (authorization)?, What sensitive data needs encryption, and how will you manage encryption keys?, Security concerns may affect your choice of architecture: for example, a microservices architecture may require more robust distributed security measures.
