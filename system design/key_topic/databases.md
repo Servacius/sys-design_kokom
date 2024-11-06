@@ -1,0 +1,8 @@
+## Databases
+Picking the right database for a system is an important decision, as it can have a significant impact on the performance, scalability and overall success of the system. Some of the key reasons why it's important to pick the right databases include:
+- **Performance:** Different databases have different performance characteristics and choosing the wrong one can lead to poor performance and slow response times.
+- **Scalabilty:** As the system grows and the volume of data increases, the database needs to be able to scale accordingly. Some databases are better suited for handling large amounts of data than others.
+- **Data Modeling:** Different databases have different capabilities for maintaining data integrity, such as enforcing constraints, and can have different levels of data security.
+- **Support and Maintainance:** Some databases have more active communities and better documentation, making it easier to find help and resources.
+
+Almost all system design problems will require you to store some data and you're most likely going to be storing it in a database (or Blob Storage). While there are many different types of databases, the most commont are relational databases (e.g. Postgres) and NoSQL databases (e.g. DynamoDB). But before we describe more about the types of databases, we will explain some theorem that help us to choose the right database or i can say theorem that help us on choosing database:
