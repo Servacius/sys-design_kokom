@@ -20,7 +20,7 @@ Choosing the right system design or architecture requires careful consideration 
     - Are there time constraints for deployments?
 
 **Though Process:** The clearer your understanding of the requirements , the easier it becomes to pick an architecture that aligns with those needs. Ensure that you capture both immadiate needs and potential future scaling considerations. Constraints help narrow down the architectural choices. For example, budget constraints might make a monolithic architecture more attractive than a microservice-based or another architecture.
-<<<<<<< HEAD
+
 
 #### 2. Assess the Workload Characteristics
 Analyze the expected workload to decide how to handle traffic, storage, and processing needs.
@@ -56,18 +56,7 @@ Choose a data storage strategy that aligns with the system's performance, scalab
 
 **Though Process:** Large, distributed systems might benefit from NoSQL solutions with eventual consistency for performance, while highly transactional system (like banking) will favor SQL databases with ACID quarantees (will add another chapter to explain ACID). If the system deals with a lot of unstructured or semi-structured data, NoSQL databases may be more appropriate.
 
-#### 6. Choose the Right Architecture Pattern
-Based on the previous steps , we must select carefully the architecture pattern that best meets the system's requirements.
-- **Key Considerations:**
-  - **Monolithic:** Simple to build and deploy but harder to scale. Good for small applications or MVPs.
-  - **Microservices:** More complex but allows for independent scaling, fault tolerance and flexibility. Suitable for large, complex systems.
-  - **Event-Driven:** Useful for real-time data processing where components need to react to events.
-  - **Layered Architecture:** Divides the system into layers (UI, business logic, data access), making it easier to manage but less scalable than microservices.
-
-
-**Thought Process:** Match the architecture to complexity, scaling needs, and expertise of your team. For example, if you expect to iterate quickly and the project is small, a monolithic approach might be better, with an eye on refactoring to microservices later.
-
-#### 7. Address Security Concerns Early On
+#### 6. Address Security Concerns Early On
 Ensure the architecture incorporates the necessary security mechanism to protect the system.
 - **Key Considerations:**
   - What kind of authentication and authorization is required? (like OAuth2, JWT, role-based access control)
@@ -76,7 +65,7 @@ Ensure the architecture incorporates the necessary security mechanism to protect
 
 **Thought Process:** How will users authenticate and what permissions will they have (authorization)?, What sensitive data needs encryption, and how will you manage encryption keys?, Security concerns may affect your choice of architecture: for example, a microservices architecture may require more robust distributed security measures.
 
-#### 8. Consider the Development and Maintenance Effort
+#### 7. Consider the Development and Maintenance Effort
 Think about how the system will evolve and how easy it will be to maintain and update.
 - **Key Considerations:**
   - Modularity and Maintainability: Keep code modular to allow for easy changes and testing.
@@ -85,7 +74,7 @@ Think about how the system will evolve and how easy it will be to maintain and u
 
 **Thought Process:** Choose an architecture that the development team can support effectively. If the team is new to microservices, a monolithic approach might be simpler at first. Keep the system modular to allow individual components to be updated or replaced without affecting the whole system.
 
-#### 9. Evaluate Cost Implications
+#### 8. Evaluate Cost Implications
 Estimate the costs of building, running and maintaining the system.
 - **Key Considerations:**
   - Operational Costs: Cloud infrastructure (like AWS, Azure, GCP), bandwidth, database storage, server costs.
@@ -94,7 +83,7 @@ Estimate the costs of building, running and maintaining the system.
 
 **Thought Process:** Can you afford dynamic scaling via cloud services, or should you manage infrastructure manually?. Consider the trade-off between upfront costs vs long-term operational savings (like microservices might be costly upfront but save money in scaling later).
 
-#### 10. Select the Right Architecture Pattern
+#### 9. Select the Right Architecture Pattern
 Based on all the previous steps, choose the architecture that best fits your needs.
 - **Key Considerations:**
   - **Monolithic:** Simple to build but difficult to scale and maintain as the system grows.
@@ -105,7 +94,7 @@ Based on all the previous steps, choose the architecture that best fits your nee
   
 **Thought Process:** Choose monolithic for simpler, smaller or MVPs with low complexity. Opt for microservices if scalability, independent deployment, and fault isolation are priorities. Event-Driven architecture are ideal for systems requireing real-time, asyncronous processing.
 
-#### 11. Plan for Monitoring, Observability and Maintainance
+#### 10. Plan for Monitoring, Observability and Maintainance
 Design the system to be easily monitored and maintainable, with observability in place from the start.
 - **Key Considerations:**
   - **Monitoring Tools:** Use tools like Prometheus, Grafana, or New Relic to monitor system health, performance and usage.
