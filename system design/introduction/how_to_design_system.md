@@ -81,7 +81,7 @@ Estimate the costs of building, running and maintaining the system.
   - Development Costs: Complexity of building the system, time to market, team size.
   - Trade-offs: Cheaper systems may require more manul scaling, while costlier ones (like serverless) might offer better automation and scaling.
 
-**Thought Process:** Can you afford dynamic scaling via cloud services, or should you manage infrastructure manually?. Consider the trade-off between upfront costs vs long-term operational savings (like microservices might be costly upfront but save money in scaling later).
+**Thought Process:** Can you afford dynamic scaling via cloud services, or should you manage infrastructure manually?. Consider the trade-off between upfront costs vs long-term operational savings.
 
 #### 9. Select the Right Architecture Pattern
 Based on all the previous steps, choose the architecture that best fits your needs.
